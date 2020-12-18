@@ -1,27 +1,27 @@
-.create-pizza {
+.create-envio {
   background: #f7f7f7;
   padding: 20px;
 }
 
-.create-pizza label,
-.create-pizza select {
+.create-envio label,
+.create-envio select {
   display: block;
 }
 
-.create-pizza label {
+.create-envio label {
   margin-top: 25px;
 }
 
-.create-pizza select {
+.create-envio select {
   padding: 10px;
   width: 180px;
 }
 
-.create-pizza input[type=checkbox] {
+.create-envio input[type=checkbox] {
   margin: 10px;
 }
 
-.create-pizza input[type=submit] {
+.create-envio input[type=submit] {
   padding: 8px 20px;
   background: green;
   color: #fff;
@@ -29,44 +29,44 @@
   margin-top: 20px;
 }
 
-.pizza-index h1 {
+.envio-index h1 {
   margin-bottom: 40px;
 }
 
-.pizza-index .pizza-item {
+.envio-index .envio-item {
   margin: 10px 0;
   padding: 12px;
   background: #f4f4f4;
 }
 
-.pizza-index .pizza-item img {
+.envio-index .envio-item img {
   width: 60px;
   display: inline-block;
 }
 
-.pizza-index .pizza-item h4 {
+.envio-index .envio-item h4 {
   display: inline-block;
   font-weight: normal;
   margin-left: 20px;
 }
 
-.pizza-index .pizza-item h4 a {
+.envio-index .envio-item h4 a {
   color: #777;
   text-decoration: none !important;
 }
 
-.pizza-details {
+.envio-details {
   background: #f7f7f7;
   padding: 20px;
   text-align: center;
 }
 
-.pizza-details p {
+.envio-details p {
   margin: 20px 0;
   font-weight: bold;
 }
 
-.pizza-details button {
+.envio-details button {
   padding: 8px 20px;
   background: green;
   color: #fff;
