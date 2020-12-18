@@ -1,0 +1,23 @@
+.pizza-index {
+    h1 {
+        margin-bottom: 40px;
+    }
+    .pizza-item {
+        margin: 10px 0;
+        padding: 12px;
+        background: #f4f4f4;
+        img {
+            width: 60px;
+            display: inline-block;
+        }
+        h4 {
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 20px;
+            a {
+                color: #777;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
