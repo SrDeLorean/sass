@@ -5,7 +5,7 @@
 <div class="flex-center position-ref full-height">
 
     <div class="content">
-        <img src="/img/pizza-house.png" alt="pizza house logo">
+        <img src="/img/54_envios.jpg" alt="pizza house logo">
         <div class="title m-b-md">
             Centro de envios el wea
         </div>
