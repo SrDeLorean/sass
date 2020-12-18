@@ -1,25 +1,24 @@
+$color: green;
+
 .create-pizza {
     background: #f7f7f7;
     padding: 20px;
     label,
-    select {
+    select {        
         display: block;
     }
     label {
-        margin-top: 30px;
+        margin-top: 25px;
     }
     select {
-        padding: 8px;
-        width: 200px;
+        padding: 10px;
+        width: 180px;
     }
     input[type=checkbox] {
         margin: 10px;
     }
     input[type=submit] {
-        background: #5e2195;
-        padding: 8px 20px;
-        color: #fff;
-        border: 0;
-        margin-top: 20px;
+        
+        @include botonProp;
     }
 }

@@ -2,19 +2,19 @@
 
 @section('content')
 <div class="wrapper create-pizza">
-  <h1>Crear orden de envio</h1>
+  <h1>Crear Orden De Envio</h1>
   <form action="/envios" method="POST">
     @csrf
-    <label for="name">Rut emisor:</label>
+    <label for="name">Rut Emisor:</label>
     <input type="text" name="rutEmisor" id="rutEmisor" required>
 
-    <label for="name">Nombre emisor:</label>
+    <label for="name">Nombre Emisor:</label>
     <input type="text" name="nombreEmisor" id="nombreEmisor" required>
 
-    <label for="name">Rut destinatario:</label>
+    <label for="name">Rut Destinatario:</label>
     <input type="text" name="rutDestinatario" id="rutDestinatario" required>
 
-    <label for="name">Nombre destinatario:</label>
+    <label for="name">Nombre Destinatario:</label>
     <input type="text" name="nombreDestinatario" id="nombreDestinatario" required>
 
     <label for="type">Región:</label>
