@@ -2,33 +2,53 @@
 
 @section('content')
 <div class="wrapper create-pizza">
-  <h1>Create a New Pizza</h1>
+  <h1>Crear orden de envio</h1>
   <form action="/pizzas" method="POST">
     @csrf
-    <label for="name">Your name:</label>
-    <input type="text" name="name" id="name" required>
-    <label for="type">Choose type of pizza:</label>
-    <select name="type" id="type">
-      <option value="margarita">Margarita</option>
-      <option value="hawaiian">Hawaiian</option>
-      <option value="veg supreme">Veg Supreme</option>
-      <option value="volcano">Volcano</option>
+    <label for="name">Rut emisor:</label>
+    <input type="text" name="rutEmisor" id="rutEmisor" required>
+
+    <label for="name">Nombre emisor:</label>
+    <input type="text" name="nombreEmisor" id="nombreEmisor" required>
+
+    <label for="name">Rut destinatario:</label>
+    <input type="text" name="rutDestinatario" id="rutDestinatario" required>
+
+    <label for="name">Nombre destinatario:</label>
+    <input type="text" name="nombreDestinatario" id="nombreDestinatario" required>
+
+    <label for="type">Región:</label>
+    <select name="region" id="region">
+      <option value="Arica y Parinacota y Tarapaca">Arica y Parinacota y Tarapaca</option>
+      <option value="	Antofagasta">Antofagasta</option>
+      <option value="Atacama y Coquimbo">Atacama y Coquimbo</option>
+      <option value="Valparaíso">Valparaíso</option>
+      <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+      <option value="O'Higgins">O'Higgins</option>
+      <option value="Maule">Maule</option>
+      <option value="Ñuble, Biobío y La Araucanía (norte)">Ñuble, Biobío y La Araucanía (norte)</option>
+      <option value="La Araucanía (sur)">La Araucanía (sur)</option>
+      <option value="Los Ríos y Los Lagos (norte)">Los Ríos y Los Lagos (norte)</option>
+      <option value="Los Lagos (sur) y Aysén">Los Lagos (sur) y Aysén</option>
+      <option value="Magallanes">Magallanes</option>
     </select>
-    <label for="base">Choose crust:</label>
-    <select name="base" id="base">
-      <option value="thick">Thick</option>
-      <option value="thin & crispy">Thin & Crispy</option>
-      <option value="cheese crust">Cheese Crust</option>
-      <option value="garlic crust">Garlic Crust</option>
-    </select>
-    <fieldset>
-      <label>Extra toppings:</label>
-      <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms<br />
-      <input type="checkbox" name="toppings[]" value="peppers">Peppers<br />
-      <input type="checkbox" name="toppings[]" value="garlic">Garlic<br />
-      <input type="checkbox" name="toppings[]" value="olives">Olives<br />
-    </fieldset>
-    <input type="submit" value="Order Pizza">
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" name="direccion" id="direccion" required>
+
+    <label for="descripcion">Descripción:</label>
+    <input type="text" name="descripcion" id="descripcion" required>
+
+
+    <label for="peso">Peso:</label>
+    <input type="number" name="peso" id="peso" required>
+
+    <label for="tamano">Tamaño:</label>
+    <input type="number" name="tamano" id="tamano" required>
+
+    <label></label>
+    <input type="submit" value="Enviar paquete">
   </form>
 </div>
+
 @endsection
