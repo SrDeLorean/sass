@@ -2,20 +2,25 @@
 
 @section('content')
 <div class="wrapper pizza-details">
-  <h1>Order for {{ $pizza->name }}</h1>
-  <p class="type">Type - {{ $pizza->type }}</p>
-  <p class="base">Base - {{ $pizza->base }}</p>
-  <p class="toppings">Extra toppings:</p>
-  <ul>
-    @foreach($pizza->toppings as $topping)
-      <li>{{ $topping }}</li>
-    @endforeach
-  </ul>
-  <form action="/pizzas/{{ $pizza->id }}" method="POST">
+  <h1>Orden numero: {{ $envio->id }}</h1>
+
+
+  <p class="type">Rut Emisor: {{ $envio->rutEmisor }}</p>
+  <p class="base">Nombre Emisor: {{ $envio->nombreEmisor }}</p>
+  <p class="type">Rut Destinatario: {{ $envio->rutDestinatario }}</p>
+  <p class="base">Nombre Destinatario: {{ $envio->nombreDestinatario }}</p>
+  <p class="type">Region: {{ $envio->region }}</p>
+  <p class="base">Dirección: {{ $envio->direccion }}</p>
+  <p class="type">Descripción: {{ $envio->descripcion }}</p>
+  <p class="base">Peso: {{ $envio->peso }}</p>
+  <p class="type">Tamaño: {{$envio->tamanoL}}x{{$envio->tamanoA}}x{{$envio->tamanoH}}</p>
+  <p class="base">Valor: {{ $envio->valor }} pesos</p>
+
+  <form action="/envios/{{ $envio->id }}" method="POST">
     @csrf
     @method('DELETE')
-    <button>Complete Order</button>
+    <button>Cancelar envio</button>
   </form>
 </div>
-<a href="/pizzas" class="back"><- Back to all pizzas</a>
+<a href="/envios" class="back">Volver</a>
 @endsection

@@ -17,7 +17,7 @@
       @yield('content')
 
       <footer>
-        <p>Copyright 2020 Pizza House</p>
+        <p>Matias Pizarro & Sebastian Ibarra - 2020</p>
       </footer>
     </body>
 </html>
