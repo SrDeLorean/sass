@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="wrapper create-pizza">
+<div class="wrapper create-envio">
   <h1>Crear Orden De Envio</h1>
   <form action="/envios" method="POST">
     @csrf

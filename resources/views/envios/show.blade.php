@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="wrapper pizza-details">
+<div class="wrapper envio-details">
   <h1>Orden numero: {{ $envio->id }}</h1>
 
 
