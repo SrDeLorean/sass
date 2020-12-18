@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pizza extends Model
+class Envio extends Model
 {
   
   // protected $table = 'table_name';

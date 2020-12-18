@@ -7,10 +7,10 @@
     <div class="content">
         <img src="/img/pizza-house.png" alt="pizza house logo">
         <div class="title m-b-md">
-            The North's Best Pizzas
+            Centro de envios el wea
         </div>
         <p class="mssg">{{ session('mssg') }}</p>
-        <a href="/pizzas/create">Order a Pizza</a>
+        <a href="/envios/create">Crear orden de envio</a>
     </div>
 </div>
 @endsection

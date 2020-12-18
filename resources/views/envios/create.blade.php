@@ -3,7 +3,7 @@
 @section('content')
 <div class="wrapper create-pizza">
   <h1>Crear orden de envio</h1>
-  <form action="/pizzas" method="POST">
+  <form action="/envios" method="POST">
     @csrf
     <label for="name">Rut emisor:</label>
     <input type="text" name="rutEmisor" id="rutEmisor" required>
@@ -44,7 +44,7 @@
     <input type="number" name="peso" id="peso" required>
 
     <label for="tamano">Tamaño:</label>
-    <input type="number" name="tamano" id="tamano" required>
+    <input type="number" placeholder="Largo" name="tamanoL" id="tamanoL" required> X <input type="number" name="tamanoA" id="tamanoA" placeholder="Ancho" required> X <input type="number" placeholder="Alto" name="tamanoH" id="tamanoH" required>
 
     <label></label>
     <input type="submit" value="Enviar paquete">

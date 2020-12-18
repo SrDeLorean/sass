@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PizzaController;
+use App\Http\Controllers\EnvioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 
 // pizza routes
-Route::get('/pizzas', [PizzaController::class, 'index']);
-Route::get('/pizzas/create', [PizzaController::class, 'create']);
-Route::post('/pizzas', [PizzaController::class, 'store']);
-Route::get('/pizzas/{id}', [PizzaController::class, 'show']);
-Route::delete('/pizzas/{id}',[PizzaController::class, 'destroy']);
+Route::get('/envios', [EnvioController::class, 'index']);
+Route::get('/envios/create', [EnvioController::class, 'create']);
+Route::post('/envios', [EnvioController::class, 'store']);
+Route::get('/envios/{id}', [EnvioController::class, 'show']);
+Route::delete('/envios/{id}',[EnvioController::class, 'destroy']);
